@@ -1,0 +1,4 @@
+{
+    "npm.exclude": "true",
+    "npm.enableScriptExplorer": true
+}
