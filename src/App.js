@@ -6,15 +6,14 @@ import Shop from './component/Shop/Shop';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Review from './component/Review/Review';
-import Manage from './component/Manage/Manage';
+import Inventory from './component/Inventory/Inventory';
 import NotFound from './component/NotFound/NotFound';
 import ProductDetail from './component/ProductDetail/ProductDetail';
 import Login from './component/login/Login';
-import { createContext } from 'react';
+
 import { AuthContextProvider, PrivateRoute } from './component/useAuth';
 import Ship from './component/ship/Ship';
 
@@ -34,8 +33,8 @@ function App() {
             <Route path="/review">
               <Review></Review>
             </Route>
-            <Route path="/manage">
-              <Manage></Manage>
+            <Route path="/inventory">
+              <Inventory></Inventory>
             </Route>
             <Route exact path="/">
               <Shop></Shop>
